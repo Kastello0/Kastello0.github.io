@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daniel Nelson - Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="logo">Daniel Nelson</h1>
+      <nav>
+        <ul class="nav">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h2>Hi, I'm Daniel Nelson</h2>
+          <p>IT/Software Engineering Professional | New York Institute of Technology Class of 2026</p>
+          <a class="btn" href="#projects">View Projects</a>
+        </div>
+        <div>
+          <img class="hero-photo" src="Assets/index/1760486234159.jpg" alt="Daniel Nelson">
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <div class="container">
+        <h3>About Me</h3>
+        <p>I'm a passionate IT/Software Engineering professional with a strong foundation in computer science.</p>
+      </div>
+    </section>
+
+    <section id="projects" class="projects">
+      <div class="container">
+        <h3>Selected Projects</h3>
+        <div class="projects-grid">
+          <article class="card">
+            <div class="card-media">
+              <img src="Assets\musicrec\Screenshot 2026-06-26 140329.png" alt="Music Recommendation Extension">
+            </div>
+            <h4>Music Recommendation Extension</h4>
+            <p>Flask-based web extension that queries Spotify API to generate mood-based recommendations.</p>
+            <a class="link" href="music-recs.html">Demo →</a>
+          </article>
+          <article class="card">
+            <div class="card-media">
+              <img src="Assets\Hackathon\Screenshot 2026-06-26 140754.png" alt="UN Hackathon Public Amenities">
+            </div>
+            <h4>UN Hackathon Public Amenities</h4>
+            <p>Developed a web application to improve access to public amenities in the NYC area.</p>
+            <a class="link" href="public-amenities.html">Live →</a>
+          </article>
+          <article class="card">
+            <div class="card-media"></div>
+            <h4>CPU Model</h4>
+            <p>Developed a CPU model in Java to simulate the behavior of a simple processor.</p>
+            <a class="link" href="cpu-model.html">Demo →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="container">
+        <h3>Contact</h3>
+        <form class="contact-form">
+          <label>
+            <span>Name</span>
+            <input type="text" name="name" required>
+          </label>
+          <label>
+            <span>Email</span>
+            <input type="email" name="email" required>
+          </label>
+          <label class="full-width">
+            <span>Message</span>
+            <textarea name="message" rows="5" required></textarea>
+          </label>
+          <button class="btn" type="submit">Send</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Daniel Nelson</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
