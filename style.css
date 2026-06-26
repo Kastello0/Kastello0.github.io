@@ -258,7 +258,7 @@ body {
   width: 100%;
   display: block;
   height: 250px; 
-  object-fit: scale-down;
+  object-fit: cover;
   background: linear-gradient(135deg, #122036, #0b1220);
 }
 
