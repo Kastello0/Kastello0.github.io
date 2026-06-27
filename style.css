@@ -258,7 +258,7 @@ body {
   width: 100%;
   display: block;
   height: 250px; 
-  object-fit: cover;
+  object-fit: contain;
   background: linear-gradient(135deg, #122036, #0b1220);
 }
 
@@ -269,3 +269,17 @@ body {
 .spec-list { list-style: none; padding: 0; margin: 0; }
 .spec-list li { position: relative; padding-left: 1.1rem; margin-bottom: 0.5rem; font-size: 0.9rem; color: var(--text); line-height: 1.4; }
 .spec-list li::before { content: "•"; position: absolute; left: 0; color: var(--accent); font-weight: 700; }
+/* Custom Row Layout for CPU Model Architecture Simulation */
+#architecture .display-cards-grid {
+  grid-template-columns: 1fr; /* Force elements into rows instead of side-by-side columns */
+  gap: 1.5rem; /* Give the rows a bit more breathing room */
+}
+
+#architecture .detail-card {
+  display: flex;
+  flex-direction: column; /* Ensures image stays on top, text on bottom */
+}
+
+#architecture .detail-card img {
+  height: 200px; /* Adjust height if necessary so it perfectly splits the top half */
+}
